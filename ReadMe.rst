@@ -1,5 +1,5 @@
 ==============
-EDK II Project
+EDK III Project
 ==============
 
 A modern, feature-rich, cross-platform firmware development
@@ -69,7 +69,7 @@ License Details
 ---------------
 
 The majority of the content in the EDK II open source project uses a
-`BSD-2-Clause Plus Patent License <License.txt>`__. The EDK II open
+`BSD-2-Clause Plus Patent License <License.txt>`__. The EDK III open
 source project contains the following components that are covered by additional
 licenses:
 
@@ -84,7 +84,7 @@ licenses:
 -  `MdeModulePkg/Library/LzmaCustomDecompressLib <MdeModulePkg/Library/LzmaCustomDecompressLib/LZMA-SDK-README.txt>`__
 -  `OvmfPkg <OvmfPkg/License.txt>`__
 
-The EDK II open source project uses content from upstream projects as git submodules
+The EDK III open source project uses content from upstream projects as git submodules
 that are covered by additional licenses.
 
 -  `ArmPkg/Library/ArmSoftFloatLib/berkeley-softfloat-3 <https://github.com/ucb-bar/berkeley-softfloat-3/blob/b64af41c3276f97f0e181920400ee056b9c88037/COPYING.txt>`__
@@ -96,7 +96,7 @@ that are covered by additional licenses.
 -  `UnitTestFrameworkPkg/Library/GoogleTestLib/googletest <https://github.com/google/googletest/blob/86add13493e5c881d7e4ba77fb91c1f57752b3a4/LICENSE>`__
 -  `RedfishPkg/Library/JsonLib/jansson <https://github.com/akheron/jansson/blob/2882ead5bb90cf12a01b07b2c2361e24960fae02/LICENSE>`__
 
-The EDK II Project is composed of packages. The maintainers for each package
+The EDK III Project is composed of packages. The maintainers for each package
 are listed in `Maintainers.txt <Maintainers.txt>`__.
 
 Resources
@@ -104,9 +104,9 @@ Resources
 
 -  `TianoCore <http://www.tianocore.org>`__
 -  `EDK
-   II <https://github.com/tianocore/tianocore.github.io/wiki/EDK-II>`__
+   III <https://github.com/tianocore/tianocore.github.io/wiki/EDK-II>`__
 -  `Getting Started with EDK
-   II <https://github.com/tianocore/tianocore.github.io/wiki/Getting-Started-with-EDK-II>`__
+   III <https://github.com/tianocore/tianocore.github.io/wiki/Getting-Started-with-EDK-II>`__
 -  `Mailing
    Lists <https://github.com/tianocore/tianocore.github.io/wiki/Mailing-Lists>`__
 -  `TianoCore Bugzilla <https://bugzilla.tianocore.org>`__
@@ -240,8 +240,8 @@ Definitions for sample patch email
 Submodules
 ----------
 
-Submodule in EDK II is allowed but submodule chain should be avoided
-as possible as we can. Currently EDK II contains the following submodules
+Submodule in EDK III is allowed but submodule chain should be avoided
+as possible as we can. Currently EDK III contains the following submodules
 
 -  CryptoPkg/Library/OpensslLib/openssl
 -  ArmPkg/Library/ArmSoftFloatLib/berkeley-softfloat-3
@@ -254,13 +254,13 @@ in openssl-1.1.1 (since stable201905) for floating point parameter
 conversion, but should be dropped once there's no such need in future
 release of openssl.
 
-To get a full, buildable EDK II repository, use following steps of git
+To get a full, buildable EDK III repository, use following steps of git
 command
 
 .. code-block:: bash
 
-  git clone https://github.com/tianocore/edk2.git
-  cd edk2
+  git clone https://github.com/leandrofriedrich/edk3.git
+ 3
   git submodule update --init
   cd ..
 
@@ -269,12 +269,12 @@ the latest submodules code.
 
 .. code-block:: bash
 
-  cd edk2
+  cd edk3
   git pull
   git submodule update
 
 Note: When cloning submodule repos, '--recursive' option is not
-recommended. EDK II itself will not use any code/feature from
+recommended. EDK III itself will not use any code/feature from
 submodules in above submodules. So using '--recursive' adds a
 dependency on being able to reach servers we do not actually want
 any code from, as well as needlessly downloading code we will not
